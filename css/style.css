@@ -1,2 +1,72 @@
 @import url(fonts.css);
 @import url(reset.css);
+
+.about {
+  font-family: 'Exo';
+  background:
+    linear-gradient(hsl(0deg 0% 0% / 90%), hsl(0deg 0% 0% / 99%)),
+    url(../img/about-bg.jpg) center / cover;
+  color: #fff;
+  padding: 120px 0;
+}
+
+.about__container {
+  max-width: 1302px;
+  padding: 0 15px;
+  margin-inline: auto;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.description__text {
+  font-size: 18px;
+  line-height: 222%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0 140px;
+}
+
+.about__skills {
+}
+.skills-list {
+  margin-inline: auto;
+  padding: 0 61px;
+}
+
+.list-item {
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.list-item::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin-left: 60px;
+  background: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%);
+  border-radius: 100%;
+}
+
+
+/* border-radius: 100%;
+fill: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%); */
