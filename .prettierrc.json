@@ -1,0 +1,10 @@
+{
+  "htmlWhitespaceSensitivity": "strict",
+  "vueIndentScriptAndStyle": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "semi": true,
+  "bracketSameLine": false,
+  "singleAttributePerLine": false
+}
