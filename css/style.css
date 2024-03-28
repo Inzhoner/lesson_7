@@ -29,6 +29,21 @@
   margin-bottom: 40px;
 }
 
+.description__title::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 35%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(66, 255, 0, 1) 50%,
+    rgba(36, 0, 255, 1) 100%
+  );
+}
+
 .description__text {
   font-size: 18px;
   line-height: 222%;
@@ -38,35 +53,39 @@
   padding: 0 140px;
 }
 
+/*// About skills */
+
 .about__skills {
-}
-.skills-list {
-  margin-inline: auto;
-  padding: 0 61px;
+  margin: 0 auto;
+  font-size: 0;
 }
 
-.list-item {
-  text-align: center;
+.about__skills-item {
   display: inline-block;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 125%;
   text-transform: capitalize;
+  margin-left: 60px;
 }
 
-.list-item:not(:last-child) {
-  margin-right: 60px;
-}
-
-.list-item::after {
+.about__skills-item::after {
   content: '';
+  display: inline-block;
   width: 10px;
   height: 10px;
   margin-left: 60px;
-  background: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%);
   border-radius: 100%;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 100%);
 }
 
-
-/* border-radius: 100%;
-fill: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%); */
+.lorem::after {
+    content: '';
+    display: inline-block;
+    left: 200px;
+    width: 10px;
+    height: 10px;
+    margin-left: 60px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 100%);
+}
