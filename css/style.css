@@ -120,42 +120,168 @@
 }
 
 .list-item-img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-
-
 .c_about-section-frame {
-    width: 100%;
-    max-width: 1512px;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-image: linear-gradient(-180deg,#000000e6 0,#000000fc 100%),linear-gradient(-180deg,#000000e6 0,#000000fc 100%);
-  }
+  width: 100%;
+  max-width: 1512px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: linear-gradient(-180deg, #000000e6 0, #000000fc 100%),
+    linear-gradient(-180deg, #000000e6 0, #000000fc 100%);
+}
 
-  /* // Task 3 */
+/* // Task 3 */
 /*//  CORAL_section */
 
 .title {
-    text-align: center;
-    font-size: 48px;
-    background-color: rgb(13, 137, 96);
-    padding: 20px 0;
+  text-align: center;
+  font-size: 48px;
+  background-color: rgb(13, 137, 96);
+  padding: 20px 0;
 }
 .btn-wrapper {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .btn {
-    display: inline-block;
-    width: 100px;
-    padding: 15px;
-    border: 1px solid red;
-    border-radius: 30px;
-    background-color: greenyellow;
-    cursor: pointer;
-    text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 30px;
+  background-color: greenyellow;
+  cursor: pointer;
+  text-align: center;
 }
+
+/*// Game */
+
+.container__game {
+    max-width: 1440px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr repeat(5, 1fr) 0.5fr 1.5fr 0.3fr 1.7fr;
+    grid-template-rows: repeat(9, 1fr) 0.5fr 1.5fr 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    padding-bottom: 200px;
+}
+
+.f1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.f2 {
+    grid-area: 2 / 3 / 3 / 6;
+}
+
+.f3 {
+    grid-area: 3 / 5 / 8 / 6;
+}
+
+.f4 {
+    grid-area: 7 / 6 / 8 / 8;
+}
+
+.f5 {
+    grid-area: 1 / 8 / 8 / 9;
+}
+
+.f6 {
+    grid-area: 1 / 9 / 2 / 11;
+}
+
+.f7 {
+    grid-area: 2 / 10 / 11 / 11;
+}
+
+.f8 {
+    grid-area: 10 / 1 / 11 / 10;
+}
+
+.f9 {
+    grid-area: 11 / 1 / 13 / 2;
+}
+
+.f10 {
+    grid-area: 12 / 2 / 13 / 6;
+}
+
+.f11 {
+    grid-area: 13 / 5 / 14 / 6;
+}
+
+
+.f1 {
+    background-color: red;
+}
+
+.f1:hover + .f2 {
+    background-color: red;
+}
+
+.f2:hover +.f3 {
+    background-color: red;
+}
+
+.bg:hover {
+    background-color: aqua;
+}
+
+.f1:hover ~ .bg {
+    background-color: red;
+}
+
+.f2:hover ~ .bg {
+    background-color: red;
+}
+
+.f3:hover ~ .bg {
+    background-color: red;
+}
+
+.f4:hover ~ .bg {
+    background-color: red;
+}
+
+.f5:hover ~ .bg {
+    background-color: red;
+}
+
+.f6:hover ~ .bg {
+    background-color: red;
+}
+
+.f7:hover ~ .bg {
+    background-color: red;
+}
+
+.f8:hover ~ .bg {
+    background-color: red;
+}
+.f9:hover ~ .bg {
+    background-color: red;
+}
+
+.f10:hover ~ .bg {
+    background-color: red;
+}
+
+.f11:hover ~ .bg {
+    background-color: red;
+}
+
+
+
+/*// Practice */
+.practice__container {
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: antiquewhite;
+}
+
